@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style type="text/css">
+  nav {
+      background: transparent;
+      box-shadow: none !important;
+    }
+
+
+
+     .logomenu{
+    height: 100%;
+    margin-left: 40px;
+    margin-top: 13px;
+   }
+
+
+
+   nav li:hover, nav li.active {
+     border-left: 0px solid #70b7f4;
+     background: transparent;
+     text-transform: capitalize;
+      }
+
+.footer{
+  background: #FAFAFA;
+  height: 40px;
+ padding-right: 30px;
+ padding-bottom:  65px;
+}
+
+   .oclass{
+    color: #ddd;
+    text-transform: capitalize;
+   }
+
+     .allmenu{
+    margin-top: 15px;
+  margin-right: 40px;
+}
+
+   .navhov:hover{
+ border-bottom: 5px solid #ddd;
+ color: #42ade7; 
+ background: white;
+   -webkit-transition: border-bottom 0.3s; /* Safari */
+    transition: border-bottom 0.3s;
+}
+
+.itstyle{
+   font-family: 'Courgette';
+}
+
+.wstyle{
+   font-family: 'Courgette';
+  color: #000;
+}
+
+.bossyfont{
+  font-size: 25px;
+}
+
+.porttalk{
+  margin-left: 90px;
+  max-width: 900px;
+}
+
+.abtoak{
+  font-weight: 900;
+  font-size: 28px;
+  color: #1aa8ea;
+}
+
+.raq{
+  font-weight: 600;
+  position: relative;
+  top: 20px;
+}
+
+.contactinfo{
+  position: relative;
+  top: 30px;
+}
+
+.deez{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navactive{
+ border-bottom: 5px solid white;
+}
+
+.navhovactive{
+  border-bottom: 5px solid #4da2d9;
+  color: black;
+ background: white;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+nav ul a {
+  transition: background-color .3s;
+  font-size: 14px;
+}
+
+.footer{
+  background: #747372;
+  height: 40px;
+  padding-top: 10px;
+ padding-right: 30px;
+ padding-left: 30px;
+ padding-bottom:  65px;
+}
+
+.contacterhold{
+  padding: 50px;
+  background-color: #42ade7;
+}
+
+    </style>
+
+    <body>
+
+       <nav>
+    <div class="nav-wrapper navtrans">
+      <a href="/" class="brand-logo logomenu"><img src="logo111.png" class="logomenu" ></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue">menu</i></a>
+  <ul class="right hide-on-med-and-down allmenu" style="text-transform: capitalize;">
+        <li><a class="navhov oclass" href="/">Home</a></li>
+        <li><a class="navhov oclass" href="/whatido">What I do</a></li>
+        <li><a class="navhov oclass" href="/mywork">My Work</a></li>
+        <li><a class="navhov oclass" href="/aboutme">What i want for you</a></li>
+        <li><a class="navhov oclass navhovactive" href="/contactme">Contact me</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/mywork">My work</a></li>
+        <li><a href="/whatido">What I do</a></li>
+        <li><a href="/aboutme">About me</a></li>
+        <li><a href="/contactme">Contact me</a></li>
+      </ul>
+    </div>
+  </nav>
+   <br>
+
+
+<div class="row">
+  <div class="container">
+    <div class="col s12">
+    <p class="abtoak">Contact Us</p>
+  </div>
+ 
+    <div class="col s12 m12 l6"> 
+    <div class="contactinfo">
+      <span style="font-weight:700; font-size:18px;">Phone:</span>
+      <br>
+      <span style="font-weight:300; font-size:18px;">+233244218326 / +233200218326 / +233542382515</span>
+      <br><br>
+       <span style="font-weight:700; font-size:18px;">Email:</span>
+      <br>
+      <span style="font-weight:300; font-size:18px;">oakssev@hotmail.com</span>
+      <br><br>
+       <span style="font-weight:700; font-size:18px;">Address:</span>
+      <br>
+      <span style="font-weight:300; font-size:18px;">Oaks Survey and Enginering Ventures,<br>P.O.Box Am420,<br> 
+        Amasaman-Accra.</span>
+    </div>
+    </div>
+    <div class="col s12 m12 l6">
+        <form class="col s12 deez" style="background-color: #fff; border-radius: 15px; margin-top: 20px;">
+        <p class="center-align raq"> Request a quote from us </p>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate" placeholder="Your name">
+          <label for="name" data-error="wrong" data-success="right">Your name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" placeholder="Your email">
+          <label for="email" data-error="wrong" data-success="right">Your email</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="number" type="text" class="validate" placeholder="Your phone number">
+          <label for="number" data-error="wrong" data-success="right">Your phone number</label>
+        </div>
+         <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" placeholder="Your message"></textarea>
+          <label for="textarea1">Your message</label>
+        </div>
+        <p class="center-align"><a class="waves-effect waves-teal btn-flat" style="background-color: #42ade7; color: #fff;">Send</a></p>
+      </div>
+    </form>
+    </div>
+  <br>
+  <br>
+ 
+  </div>
+</div>
+<br><br>
+ <section class="footer">
+  <br>
+  <span style="color:white; position: relative; float: left; font-size: 12px; font-weight: 700;"> Bernard Lomo | 0571490435 | bernardlomo2@gmail.com</span>
+<span style="color:white; position: relative; float: right; top: -10px;">
+<span><a href="#!"><img src="fblogo.png" class="responsive-img" height="35px" width="35px">
+<span><a href="#!"><img src="tlogo.png" class="responsive-img" height="35px" width="35px">
+  <span><a href="#!"><img src="ilogo.png" class="responsive-img" height="35px" width="35px">
+</span>
+<br>
+</section>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+           <script type="text/javascript" src="materialize.min.js"></script>
+      <script type="text/javascript">
+       $(".button-collapse").sideNav();
+      </script>
+   <script type="text/javascript">
+    $(function() {
+    $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+     });
+   </script>
+    </body>
+  </html>
