@@ -78,13 +78,14 @@
   font-weight: 900;
   font-size: 28px;
   color: #42ade7;
-  border-bottom: 3px solid #42ade7;
+  border-bottom: 4px solid #42ade7;
 }
 
 .raq{
   font-weight: 600;
   position: relative;
   top: 20px;
+  margin-bottom: 20px;
 }
 
 .contactinfo{
@@ -129,6 +130,42 @@ nav ul a {
   background-color: #42ade7;
 }
 
+ @media only screen and (min-width : 993px) and (max-width : 1224px) {
+
+
+
+}
+
+@media only screen and (min-width : 100px) and (max-width : 600px) {
+
+ .logomenu{
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 3.5px;
+   }
+
+.deez{
+  position: relative;
+  top: 40px;
+}
+
+}
+
+@media only screen and (min-width : 601px) and (max-width : 992px) {
+
+ .logomenu{
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 3.5px;
+   }
+
+.deez{
+  position: relative;
+  top: 40px;
+}
+
+}
+
     </style>
 
     <body>
@@ -145,8 +182,9 @@ nav ul a {
         <li><a class="navhov oclass navhovactive" href="/contactme">Contact me</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="/mywork">My work</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/whatido">What I do</a></li>
+        <li><a href="/mywork">My work</a></li>
         <li><a href="/aboutme">About me</a></li>
         <li><a href="/contactme">Contact me</a></li>
       </ul>
@@ -180,21 +218,22 @@ nav ul a {
     <div class="col s12 m12 l6">
         <form class="col s12 deez" style="background-color: #fff; border-radius: 15px; margin-top: 20px;">
         <p class="center-align raq"> Request a quote from us </p>
+       
       <div class="row">
         <div class="input-field col s12">
-          <input id="name" type="text" class="validate" placeholder="Your name">
+          <input id="name" type="text" class="validate" placeholder="Full Name">
           <label for="name" data-error="wrong" data-success="right">Your name</label>
         </div>
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate" placeholder="Your email">
+          <input id="email" type="email" class="validate" placeholder="Active Email">
           <label for="email" data-error="wrong" data-success="right">Your email</label>
         </div>
         <div class="input-field col s12">
-          <input id="number" type="text" class="validate" placeholder="Your phone number">
+          <input id="number" type="text" class="validate" placeholder="Phone Number">
           <label for="number" data-error="wrong" data-success="right">Your phone number</label>
         </div>
          <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea" placeholder="Your message"></textarea>
+          <textarea id="textarea1" class="materialize-textarea" placeholder="Message"></textarea>
           <label for="textarea1">Your message</label>
         </div>
         <p class="center-align"><a class="waves-effect waves-teal btn-flat" style="background-color: #42ade7; color: #fff;">Send</a></p>
@@ -209,7 +248,8 @@ nav ul a {
 <br><br>
  <section class="footer">
   <br>
-  <span style="color:white; position: relative; float: left; font-size: 12px; font-weight: 700;"> Bernard Lomo | 0571490435 | bernardlomo2@gmail.com</span>
+  <span style="color:white; position: relative; float: left; font-size: 12px; font-weight: 700;">&copy; 2016, Bernard Lomo.
+ <span class="hide-on-small-only">All Rights Reserved.</span>
 <span style="color:white; position: relative; float: right; top: -10px;">
 <span><a href="#!"><img src="fblogo.png" class="responsive-img" height="35px" width="35px">
 <span><a href="#!"><img src="tlogo.png" class="responsive-img" height="35px" width="35px">
