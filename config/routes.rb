@@ -9,6 +9,7 @@ match '/mywork' , to: 'static_pages#mywork', via: 'get'
 match '/whatido' , to: 'static_pages#whatido', via: 'get'
 match '/aboutme' , to: 'static_pages#aboutme', via: 'get'
 match '/contactme' , to: 'static_pages#contactme', via: 'get'
+match '/thoughts_of_a_young_billionaire_2' , to: 'static_pages#thoughts_of_a_young_billionaire_2', via: 'get'
 
 
 

@@ -15,4 +15,7 @@ end
 def contactme
 end
 
+def thoughts_of_a_young_billionaire_2
+end
+
 end
