@@ -28,6 +28,24 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+    config.action_mailer.raise_delivery_errors = false
+  # Specifies the header that your server uses for sending files.
+  # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
+  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
+  config.action_mailer.default_url_options = { host: 'www.bernardlomo.me' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+     :address    => 'smtp.sendgrid.net',
+     :port       => '587',
+     :authentication  => :plain,
+     :user_name => ENV['SENDGRID_USERNAME'],
+     :password  => ENV['SENDGRID_PASSWORD'],
+     :domain   =>  'heroku.com',
+     :enable_starttls_auto => true
+  }
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 

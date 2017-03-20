@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :leads
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,6 +9,7 @@ match '/home' , to: 'static_pages#home', via: 'get'
 match '/mywork' , to: 'static_pages#mywork', via: 'get'
 match '/whatido' , to: 'static_pages#whatido', via: 'get'
 match '/aboutme' , to: 'static_pages#aboutme', via: 'get'
+match '/special_offer' , to: 'static_pages#special_offer', via: 'get'
 match '/contactme' , to: 'static_pages#contactme', via: 'get'
 match '/personals' , to: 'static_pages#personals', via: 'get'
 match '/thoughts_of_a_young_billionaire_2' , to: 'static_pages#thoughts_of_a_young_billionaire_2', via: 'get'

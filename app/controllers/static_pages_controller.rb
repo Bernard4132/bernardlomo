@@ -21,4 +21,8 @@ end
 def personals
 end
 
+def special_offer
+	@lead = Lead.new
+end
+
 end
