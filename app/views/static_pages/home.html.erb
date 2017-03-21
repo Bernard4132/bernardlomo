@@ -416,6 +416,127 @@ blockquote:before {
   font-weight: 500;
 }
 
+.positive,
+.negative {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  position:relative;
+  overflow: hidden;
+  
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  
+  -webkit-box-shadow: 5px 5px 15px rgba(0,140,158,0.3);
+     -moz-box-shadow: 5px 5px 15px rgba(0,140,158,0.3);
+          box-shadow: 5px 5px 15px rgba(0,140,158,0.3);
+}
+
+.positive {
+  background-color: #f4f5f9;
+}
+
+.negative {
+  background-color: #f4f5f9;
+}
+
+.icon {
+  width: 80px;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,0.12);
+  color: #fff;
+  position: relative;
+  float: left;
+}
+
+.positive > .icon {
+  background-color: #3ac569;
+  border: 1px solid #3ac569;
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at center bottom, #88dba3 0%, #3ac569 50%);
+  background-image: radial-gradient(ellipse farthest-corner at center bottom, #88dba3 0%, #3ac569 50%);
+}
+
+.negative > .icon {
+  background-color: #f1404b;
+  border: 1px solid #f1404b;
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at center bottom, #ff7473 0%, #f1404b 50%);
+  background-image: radial-gradient(ellipse farthest-corner at center bottom, #ff7473 0%, #f1404b 50%);
+}
+
+.message {
+  font-size: 18px;
+  line-height: 80px;
+  vertical-aligment: middle;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+
+.message > span {
+  font-weight: 800;
+}
+
+.positive > .message {
+  color: #3ac569;
+}
+
+.negative > .message {
+  color: #f1404b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 8px;
+  float: right;
+  margin: 26px 15px;
+  
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.12);
+     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.12);
+          box-shadow: 1px 1px 3px rgba(0,0,0,0.12);
+}
+
+.ok {
+  color: #3ac569;
+  border: 1px solid #3ac569;
+}
+
+.ok:hover {
+  color: #fff;
+  background-color: #3ac569;
+  border: 1px solid #3ac569;
+}
+
+.no {
+  color: #f1404b;
+  border: 1px solid #f1404b;
+}
+
+.no:hover {
+  color: #fff;
+  background-color: #f1404b;
+  border: 1px solid #f1404b;
+}
+
+.notice_wrap{
+  display: none;
+}
+
+.alert_wrap{
+  display: none;
+}
+
  @media only screen and (min-width : 993px) and (max-width : 1224px) {
 
 
@@ -556,6 +677,19 @@ text-transform: uppercase;
       </ul>
     </div>
   </nav>
+
+  <% if notice %>
+<div class='positive notice_wrap'>
+    <div class='message'><span>Congratulations!</span>  <%= notice %></div>
+  </div>
+    <% elsif alert %>
+ <div class='negative alert_wrap'>
+    <div class='icon ion-sad-outline'><i class="material-icons">sentiment_dissatisfied</i></div>
+    <div class='message'><span>Oh No!</span> <%= alert %>
+    </div>
+    
+  </div>
+    <% end %>
 
   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -783,5 +917,36 @@ Email marketing is one of the unexplored and unutilized marketing tactic on our 
       <script type="text/javascript">
        $(".button-collapse").sideNav();
       </script>
+
+     <script>
+$(document).ready(function(){
+setTimeout(function(){
+$('.notice_wrap').slideUp("slow", function(){
+  $(this).remove();
+})
+}, 6200);
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#closeflash").click(function(){
+        $(".alert_wrap").slideUp(1000);
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.notice_wrap').slideDown("slow");
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.alert_wrap').slideDown("slow");
+});
+</script>
+
     </body>
   </html>

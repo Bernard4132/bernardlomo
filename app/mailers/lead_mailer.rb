@@ -1,6 +1,6 @@
 class LeadMailer < ApplicationMailer
 
-default from: "ThankYou@bernardlomo.me"
+default from: "Ben@bernardlomo.me"
   
   def lead_thanks(lead)
   	@lead = lead
